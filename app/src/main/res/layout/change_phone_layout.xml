@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:onClick="onCancelEdit"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_white_big"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onCancelEdit"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="change phone"
+                    android:textSize="@dimen/title_font_size"
+                    android:typeface="normal"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"/>
+            </RelativeLayout>
+
+            <!-- Continue -->
+            <bitwalking.bitwalking.util.DolceVitaButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="next"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/white"
+                android:textAllCaps="true"
+                android:id="@+id/continue_change"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:paddingRight="10dp"
+                android:layout_alignParentRight="true"
+                android:onClick="onContinueChange"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <bitwalking.bitwalking.util.CustomViewPager
+                android:id="@+id/change_phone_pager"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="@dimen/settings_category_separate_height"
+                android:scrollbars="vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/change_phone_form_idx_layout">
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

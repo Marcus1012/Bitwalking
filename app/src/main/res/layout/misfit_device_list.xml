@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/black_gradient_background">
+
+        <!-- Cancel -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp"
+            android:onClick="onCancel"
+            android:layout_alignParentLeft="true">
+            <ImageButton
+                android:layout_width="15dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/x_white"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="onCancel"
+                android:id="@+id/login_back_cancel"/>
+        </RelativeLayout>
+
+        <!-- Title -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecte misfit device"
+                android:typeface="normal"
+                android:textSize="@dimen/title_font_size"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <!-- Reset -->
+        <!--<bitwalking.bitwalking.util.DolceVitaButton-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="s c a n"-->
+            <!--android:scaleType="fitCenter"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:id="@+id/scan_stop_device"-->
+            <!--android:typeface="normal"-->
+            <!--android:textSize="16sp"-->
+            <!--android:paddingRight="0dp"-->
+            <!--android:visibility="invisible"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:onClick="onScanStop"/>-->
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="onCancel"
+            android:paddingRight="5dp"
+            android:layout_alignParentRight="true">
+            <ImageButton
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/wishlist_v_white"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="onSaveDevice"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<ProgressBar-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:id="@+id/misfit_config_progress"-->
+            <!--android:visibility="invisible"/>-->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:id="@+id/misfit_service_msg"
+                    android:layout_centerInParent="true"
+                    android:text=""/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <ListView
+                    android:id="@+id/devices_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:divider="#22222222"
+                    android:dividerHeight="1dp"
+                    android:stackFromBottom="false" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/misfit_device_item_height"
+                android:visibility="gone">
+                <ProgressBar
+                    android:id="@+id/device_scanning_progress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:visibility="visible"
+                    android:layout_centerInParent="true"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#22222222"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

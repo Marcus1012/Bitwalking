@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:onClick="onCancelPhoneVerify"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/x_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/phone_verify_cancel"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify phone number"
+                    android:textSize="18sp"
+                    android:typeface="normal"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:id="@+id/join_activity_title"/>
+            </RelativeLayout>
+
+            <!-- Continue -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:onClick="onConfirmPhone"
+                android:layout_alignParentRight="true">
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/v_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onConfirmPhone"
+                    android:id="@+id/phone_verify_confirm"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                layout="@layout/enter_verification_code_layout" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/black">
+            <bitwalking.bitwalking.util.MyDigitsKeyboard
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff000000"
+                android:id="@+id/digits_keyboard"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

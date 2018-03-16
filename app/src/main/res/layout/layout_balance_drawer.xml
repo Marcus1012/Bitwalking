@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/drawerPane"
+android:layout_gravity="start|center_vertical"
+android:background="@android:color/transparent"
+    android:layout_marginLeft="-65dp"
+android:clickable="false">
+
+    <!-- Toolbar   -->
+
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_centerVertical="true"
+    android:layout_alignParentLeft="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bg_balance"
+        android:scaleType="centerCrop"
+        />
+
+    <!-- Balance Layout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menu_balance_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent">
+
+        <!-- BALANCE -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/my_balance_status"
+            android:layout_centerVertical="true"
+            android:paddingLeft="8dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <bitwalking.bitwalking.util.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="balance"
+                    android:textSize="20sp"
+                    android:layout_marginLeft="30dp"
+                    android:typeface="normal"
+                    android:textStyle="normal"
+                    android:textAllCaps="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp">
+
+                <bitwalking.bitwalking.util.BaronNeueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0.00"
+                    android:paddingRight="29dp"
+                    android:paddingTop="0dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="70sp"
+                    android:typeface="normal"
+                    android:textStyle="italic|bold"
+                    android:textAllCaps="true"
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/menu_balance"/>
+
+                <bitwalking.bitwalking.util.BaronNeueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:text="W$"
+                    android:layout_alignRight="@id/menu_balance"
+                    android:layout_alignBottom="@id/menu_balance"
+                    android:paddingBottom="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitCenter"/>
+
+            </RelativeLayout>
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp">
+    <!-- android:background="@drawable/back_circle_white"-->
+
+    <!--<bitwalking.bitwalking.util.RobotoTextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="pay"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        />
+   -->
+
+        <ImageButton
+            android:layout_marginLeft="8dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:enabled="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_receive" />
+
+   </FrameLayout>
+
+
+   </RelativeLayout>
+
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       >
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/title_height"
+           android:clickable="false"
+           android:orientation="horizontal">
+
+           <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:id="@+id/closeDrawerView"
+                android:clickable="true"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:clickable="false"
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    />
+            </RelativeLayout>
+
+            <!-- Request -->
+            <RelativeLayout
+                android:id="@+id/wallet_send_request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="0dp"
+                android:visibility="visible">
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:enabled="true"
+                     android:visibility="gone"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/send_receive" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

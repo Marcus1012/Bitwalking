@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Verification Code -->
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_white_border"
+        android:layout_marginBottom="5dp">
+
+        <bitwalking.bitwalking.util.BWEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:hint="Verification Code"
+            android:textSize="@dimen/text_input_size"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:typeface="normal"
+            android:inputType="number"
+            android:maxLength="8"
+            android:imeActionId="@+id/verify_sms_done"
+            android:imeActionLabel="Verify"
+            android:imeOptions="actionDone"
+            android:id="@+id/verify_code" />
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/payment_info_layout_background">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/send_popup_background"
+            android:id="@+id/payment_review_popup_layout">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="251dp"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Profile Image -->
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="21dp"
+                        android:layout_weight="0">
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/send_review_profile_diameter"
+                            android:layout_height="@dimen/send_review_profile_diameter">
+
+                            <bitwalking.bitwalking.util.RoundImageView
+                                android:layout_width="@dimen/send_review_profile_diameter"
+                                android:layout_height="@dimen/send_review_profile_diameter"
+                                android:src="@drawable/transaction_default_profile_image"
+                                android:visibility="visible"
+                                android:id="@+id/payment_review_image"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="SG"
+                                android:textSize="@dimen/send_review_profile_initials_size"
+                                android:textColor="@android:color/white"
+                                android:fontFamily="sans-serif-light"
+                                android:layout_centerInParent="true"
+                                android:id="@+id/payment_review_initials"/>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical"
+                            android:layout_marginRight="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="17sp"
+                                android:textColor="@color/send_review_name_email_text_color"
+                                android:text="Stas Greenberg"
+                                android:id="@+id/payment_review_name"/>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="5dp"
+                                android:background="@android:color/transparent"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp"
+                                android:textColor="@color/send_review_name_email_text_color"
+                                android:text="stas@bitwalking.com"
+                                android:id="@+id/payment_review_email"/>
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="#414042"
+                        android:layout_marginTop="5dp"
+                        android:alpha="0.3"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOTE"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginTop="19dp"
+                            android:textColor="@color/send_review_note_hint_color"
+                            android:textStyle="bold"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Add note"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="sans-serif-light"
+                            android:maxLines="2"
+                            android:maxLength="60"
+                            android:textColorHint="@color/send_review_note_hint_color"
+                            android:textColor="@color/send_review_name_email_text_color"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/payment_review_note"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:id="@+id/payment_info_status_layout">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.25dp"
+                        android:background="#414042"
+                        android:layout_marginTop="5dp"
+                        android:alpha="0.3"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginBottom="13dp"
+                            android:maxLines="1"
+                            android:text="14:54, sep 05, 2016"
+                            android:textColor="@color/send_review_status_text_color"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/payment_info_status_date"
+                            android:typeface="normal"
+                            android:layout_alignParentLeft="true"/>
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="21dp"
+                            android:layout_marginRight="21dp"
+                            android:layout_marginTop="19dp"
+                            android:layout_marginBottom="13dp"
+                            android:maxLines="1"
+                            android:text="completed"
+                            android:textColor="@color/send_review_status_text_color"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/payment_info_status"
+                            android:typeface="normal"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="152dp"
+            android:minHeight="66dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/send_popup_amount_background"
+            android:layout_marginTop="0dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:paddingTop="0dp">
+
+                <bitwalking.bitwalking.util.BaronNeueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="36sp"
+                    android:textStyle="bold"
+                    android:text=" 15.80"
+                    android:id="@+id/payment_review_amount"/>
+
+                <bitwalking.bitwalking.util.BaronNeueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:text="W$"
+                    android:typeface="monospace"
+                    android:textStyle="italic|bold"
+                    android:textAllCaps="true"
+                    android:layout_marginLeft="0dp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <include layout="@layout/include_events_empty"
+        android:visibility="gone"
+        android:id="@+id/emptyView"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/eventsView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp">
+
+        <RelativeLayout
+            android:id="@+id/backView"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:onClick="onBackClick">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_white"
+                android:enabled="true"
+                android:onClick="onBackClick"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="events"
+                android:visibility="gone"
+                android:textSize="@dimen/title_font_size"
+                android:paddingTop="2dp"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/settings_title"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:alpha="0.64"
+        android:visibility="gone"
+        android:id="@+id/events_loading_filter"/>
+
+
+
+
+</FrameLayout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:onClick="onExitClick">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_white"
+                android:enabled="true"
+                android:onClick="onExitClick"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="PROFILE"
+                android:textSize="@dimen/title_font_size"
+                android:paddingTop="2dp"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Complete Profile Message -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp">
+
+                <bitwalking.bitwalking.util.BaronNeueTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/complete_profile_msg"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:layout_marginTop="20dp"
+                    android:textAllCaps="false"/>
+
+            </RelativeLayout>
+
+            <!-- Profile Image -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="10dp">
+
+                <bitwalking.bitwalking.util.RoundImageView
+                    android:layout_width="83dp"
+                    android:layout_height="83dp"
+                    android:background="@drawable/profile_default_circle"
+                    android:scaleType="fitCenter"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/complete_profile_image"
+                    android:onClick="onEditProfileImageClick"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- First Name -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="@dimen/complete_text_side_margin"
+                    android:layout_marginLeft="@dimen/complete_text_side_margin">
+
+                    <bitwalking.bitwalking.util.BWEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:background="@android:color/transparent"
+                        android:hint="First name"
+                        android:textSize="@dimen/complete_profile_text_size"
+                        android:maxLength="@integer/max_name_len"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:cursorVisible="true"
+                        android:typeface="normal"
+                        android:id="@+id/profile_first_name"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.25dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/menu_item_delimiter_color"
+                        android:layout_alignBottom="@+id/profile_first_name"/>
+
+                </RelativeLayout>
+
+                <!-- Last Name -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="@dimen/complete_text_side_margin"
+                    android:layout_marginLeft="@dimen/complete_text_side_margin">
+
+                    <bitwalking.bitwalking.util.BWEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:background="@android:color/transparent"
+                        android:hint="Last name"
+                        android:textSize="@dimen/complete_profile_text_size"
+                        android:maxLength="@integer/max_name_len"
+                        android:paddingBottom="12dp"
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:cursorVisible="true"
+                        android:typeface="normal"
+                        android:id="@+id/profile_last_name"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.25dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/menu_item_delimiter_color"
+                        android:layout_alignBottom="@+id/profile_last_name"/>
+
+                </RelativeLayout>
+
+                <!-- Date of Birth -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="onDOBClick"
+                    android:layout_marginRight="@dimen/complete_text_side_margin"
+                    android:layout_marginLeft="@dimen/complete_text_side_margin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:id="@+id/dob_layout"
+                        android:onClick="onDOBClick">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Birthday"
+                            android:textColor="@android:color/darker_gray"
+                            android:layout_marginRight="8dp"
+                            android:textSize="@dimen/complete_profile_text_size"/>
+
+                        <bitwalking.bitwalking.util.RobotoTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:hint="(DD-MM-YYYY)"
+                            android:textSize="@dimen/complete_profile_text_size"
+                            android:singleLine="true"
+                            android:maxLength="10"
+                            android:paddingBottom="10dp"
+                            style="@android:style/Widget.EditText"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/profile_dob"
+                            android:onClick="onDOBClick"/>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.25dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/menu_item_delimiter_color"
+                        android:layout_alignBottom="@+id/dob_layout"/>
+
+                </RelativeLayout>
+
+                <!-- Country -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="onCountryClick"
+                    android:layout_marginRight="@dimen/complete_text_side_margin"
+                    android:layout_marginLeft="@dimen/complete_text_side_margin">
+
+                    <bitwalking.bitwalking.util.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@android:color/darker_gray"
+                        android:hint="Country"
+                        android:textSize="@dimen/complete_profile_text_size"
+                        android:maxLength="@integer/max_name_len"
+                        android:paddingBottom="10dp"
+                        android:singleLine="true"
+                        android:cursorVisible="true"
+                        android:typeface="normal"
+                        style="@android:style/Widget.EditText"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/profile_country"
+                        android:onClick="onCountryClick"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.25dp"
+                        android:paddingTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/menu_item_delimiter_color"
+                        android:layout_alignBottom="@+id/profile_country"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Save -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_solid_black"
+                    android:textAllCaps="true"
+                    android:text="SAVE"
+                    android:textStyle="normal"
+                    android:fontFamily="sans-serif"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/white"
+                    android:onClick="onSaveProfile"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

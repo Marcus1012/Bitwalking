@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "490709019245",
+    "firebase_url": "https://bitwalking-33f77.firebaseio.com",
+    "project_id": "bitwalking-33f77",
+    "storage_bucket": "bitwalking-33f77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490709019245:android:445d2762e490cb8f",
+        "android_client_info": {
+          "package_name": "bitwalking.bitwalking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490709019245-paiofsh8r8t8utudjn8pui5tovjjlmt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bitwalking.bitwalking",
+            "certificate_hash": "B4FC10A6308C9B3E75DF4A52BA405AD16D31BF12"
+          }
+        },
+        {
+          "client_id": "490709019245-kvrt848quh3vu5rl4ol78saeq2pep3v7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bitwalking.bitwalking",
+            "certificate_hash": "5D8582A5969EA9323991A1296C11307B183C6A17"
+          }
+        },
+        {
+          "client_id": "490709019245-954f4d2bdshbeq5a627lhrd9j0jh04i1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZz67AXp-7paeL0w0sNQ59lcF9JCEUB4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490709019245-954f4d2bdshbeq5a627lhrd9j0jh04i1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.crashlytics.sdk.android:crashlytics-2.6.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/85677f29e8957b0c2d7379a1d7383e033e4c121e/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/85677f29e8957b0c2d7379a1d7383e033e4c121e/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

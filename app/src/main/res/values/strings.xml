@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_code">n35y3</string>
+    <string name="app_name">Bitwalking</string>
+    <string name="title_activity_main">Go, make some money!</string>
+
+    <string name="menu_drawer_open">Open Menu</string>
+    <string name="menu_drawer_close">Close Menu</string>
+    <string name="support_menu_text">Support &amp; FAQ</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_help">Help</string>
+
+    <!-- Service Notification -->
+    <string name="bw_service_notification">BW Service Notification</string>
+    <string name="bw_service_gps_alert">BW Service GPS Alert</string>
+    <string name="bw_service_bt_alert">BW Service Bluetooth Alert</string>
+    <string name="bw_service_label">Bitwalking</string>
+
+    <string-array name="nemu_items">
+        <item>MYDAY</item>
+        <item>Products</item>
+        <item>Invite</item>
+        <item>Profile</item>
+    </string-array>
+
+    <!-- Registration -->
+    <integer name="max_name_len">30</integer>
+    <string name="error_invalid_email">Invalid email address</string>
+    <string name="error_email_not_free">Email already registered</string>
+    <string name="error_invalid_fullname">Invalid full name</string>
+    <string name="error_invalid_passcode">Invalid passcode</string>
+    <string name="error_invalid_phone">Invalid phone number</string>
+    <string name="error_invalid_phone_code">Invalid country code</string>
+    <string name="error_invalid_password">
+        Password must:\n
+        - Have at least one letter\n
+        - Have at least one number\n
+        - Have more than 5 characters\n
+        - Not contain consecutive characters
+    </string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_same_password_new_old">Password same as old</string>
+    <string name="error_invalid_age">Minimal age is</string>
+    <string name="error_invalid_code">Invalid verification code</string>
+    <string name="error_new_password_same_as_old">New password is same as current</string>
+    <string name="user_agreement_text"><u>terms</u></string>
+    <string name="privacy_policy_text"><u>privacy policy</u>.</string>
+    <string name="pass_code_text">CREATE A 4-DIGIT PASSCODE TO HELP PROTECT YOUR DATA. YOU’LL BE PROMPTED TO ENTER YOUR PASSCODE TO RESTORE YOUR ACCOUNT PASSWORD IF FORGOTTEN. DON’T LOSE IT!</string>
+    <string name="pass_code_text_verify">INSERT PASSCODE, AGAIN</string>
+    <string name="phone_verification_explain">"We will send you an activation code\nvia SMS to your mobile phone"</string>
+    
+    <string name="ask_to_accept_w_dollars">\nwant ot spend your\nwalking dollars in\nplaces you like or\nwanna try.\n\nsend a request:</string>
+
+    <!-- Password Reset -->
+    <string name="reset_failed_message">Password reset failed, your link has expired please try again.</string>
+
+    <!-- Wishlist -->
+    <!-- My wishlist -->
+    <string name="empty_wishlist_text">Create your own wish list with items you would like to see in the Bitwalking Market</string>
+
+    <string name="moving_to_new_phone">Your account is associated with another phone! Do you want to move your account to this phone?\n\nNOTE: THIS WILL DISCONNECT YOUR BITWALKING ACCOUNT FROM PREVIOUS PHONE</string>
+
+    <!-- Coming soon -->
+    <string name="coming_soon_title">This feature is not available\nin your country yet.</string>
+    <string name="coming_soon_text">What to do?\nSpread the word! The more\npeople join Bitwalking in your\ncountry the faster we will get there.</string>
+
+    <!-- Off grid -->
+    <string name="off_grid_title"> No connection </string>
+    <string name="off_grid_text">We’re having trouble reaching the\nBitwalking network. Please check\nyour connection.</string>
+
+    <!-- Invite friend -->
+    <string name="invite_friends_text">"Invite your friends to\nBitwalking and get access\nto early features and\nexclusive promotions"</string>
+
+    <!-- Invite business -->
+    <string name="invite_business_text">Find a business\nyou like and invite\nthem to accept W$.</string>
+
+    <!-- Profile -->
+    <string name="complete_profile_msg">to start operating your account\nplease complete your profile</string>
+
+    <!-- Vote products -->
+    <string name="vote_products_text">\nThe Bitwalking store is coming. Let us know how you would like to spend your W$.\n</string>
+
+    <string name="prompt_enter_verifi">Enter verification code sent to \n %2$s </string>
+
+
+    <string name="send_and_request">send and request</string>
+
+</resources>

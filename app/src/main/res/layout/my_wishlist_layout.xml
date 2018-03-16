@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:layout_marginRight="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:onClick="onWishlistExit">
+            <ImageButton
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_white_big"
+                android:enabled="true"
+                android:onClick="onWishlistExit"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="MY WISHLIST"
+                android:textSize="16sp"
+                android:paddingTop="2dp"
+                android:textAllCaps="true"
+                android:typeface="normal"
+                android:textStyle="italic"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/wishlist_title"/>
+
+        </RelativeLayout>
+
+        <!-- Wishlist edit -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:onClick="goToWishlistClick"
+            android:visibility="visible"
+            android:id="@+id/go_to_wishlist_button_layout">
+
+            <ImageButton
+                android:layout_width="26dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/wishlist_icon_white"
+                android:textSize="16sp"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:onClick="goToWishlistClick"
+                android:id="@+id/go_to_wishlist_button"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:focusable="true"
+        android:editable="false"
+        android:enabled="false"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:id="@+id/empty_wishlist_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="160dp"
+                    android:src="@drawable/wishlist_empty_black"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="30dp"
+                android:textSize="19sp"
+                android:typeface="normal"
+                android:gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:text="@string/empty_wishlist_text"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Create"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:typeface="normal"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@android:color/black"
+                android:onClick="onCreateWishlist"
+                android:background="@drawable/round_black_border"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+    <!-- Wishlist -->
+    <ListView
+        android:id="@+id/my_wishlist_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@color/menu_item_delimiter_color"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="0dp"
+        android:scrollbars="vertical"
+        android:background="@android:color/transparent" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:id="@+id/menu_item_layout"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/menu_margin_left_right"
+        android:layout_marginTop="@dimen/menu_margin_top"
+        android:layout_marginBottom="@dimen/menu_margin_bottom">
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="@dimen/menu_item_icon_size"
+            android:layout_height="@dimen/menu_item_icon_size"
+            android:scaleType="fitCenter"
+            android:layout_marginRight="@dimen/menu_margin_left_right"
+            android:adjustViewBounds="true"
+            android:src="@drawable/today_icon"/>
+
+        <bitwalking.bitwalking.util.DolceVitaTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon"
+            android:textColor="@color/menu_item_text_color"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/menu_item_text_size"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="4dp"
+            android:paddingRight="50dp"
+            android:typeface="normal"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:text="today"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/menu_divider_gradient"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

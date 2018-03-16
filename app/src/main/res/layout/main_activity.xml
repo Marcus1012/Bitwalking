@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    style="@style/MyBwAppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/today_root_layout"
+        android:background="@android:color/background_light"
+        android:orientation="vertical">
+
+        <bitwalking.bitwalking.util.MySwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/today_refresh_layout"
+            android:background="@android:color/transparent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:background="@android:color/transparent"/>
+            </ScrollView>
+
+
+        </bitwalking.bitwalking.util.MySwipeRefreshLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!-- DEV -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentRight="true"
+                    android:visibility="invisible"
+                    android:id="@+id/main_debug_layout">
+
+                    <bitwalking.bitwalking.util.DolceVitaTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DEV !"
+                        android:textSize="26sp"
+                        android:textColor="#50d62126" />
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/myday_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true">
+                </ProgressBar>
+
+                <!-- Menu -->
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="220dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/top_left_button">
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@android:color/transparent"
+                        android:id="@+id/myday_bw_logo_layout"
+                        android:onClick="onLogoClick">
+                        <ImageButton
+                            android:layout_width="30dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/logo_white_big"
+                            android:scaleType="fitCenter"
+                            android:background="@android:color/transparent"
+                            android:id="@+id/main_menu_button"
+                            android:layout_centerInParent="true"
+                            android:onClick="onLogoClick"/>
+                    </RelativeLayout>
+
+                    <!-- Invite -->
+                    <RelativeLayout
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:layout_alignParentBottom="true"
+                        android:id="@+id/myday_invite_text_layout"
+                        android:paddingLeft="0dp"
+                        android:layout_marginRight="50dp"
+                        android:rotation="-45"
+                        android:layout_marginBottom="68dp"
+                        android:onClick="onInviteFriendsClick">
+
+                        <bitwalking.bitwalking.util.DolceVitaTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="invite"
+                            android:textSize="@dimen/today_action_font_size"
+                            android:typeface="normal"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:layout_margin="13dp"
+                            android:id="@+id/myday_invite_text"
+                            android:layout_centerInParent="true"
+                            android:textColor="@android:color/white"
+                            android:onClick="onInviteFriendsClick"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+                <!-- Store -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="20dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                         android:background="@android:color/transparent"
+                        android:typeface="normal"
+                        android:src="@drawable/ic_flash"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="15dp"
+                        />
+
+                    <View
+                        android:layout_width="11dp"
+                        android:layout_height="11dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/notification_circle"
+                        android:visibility="gone"
+                        android:id="@+id/store_notification"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:layout_marginRight="14dp"
+                    android:layout_marginTop="130dp"
+                    android:onClick="onCurrentEventClick"
+                    android:id="@+id/main_event_donation_layout">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/give_icon"/>
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 0.00"
+                            android:layout_gravity="bottom"
+                            android:textSize="@dimen/give_text_size"
+                            android:textStyle="italic"
+                            android:layout_marginLeft="-10dp"
+                            android:textColor="@color/give_text_color"
+                            android:id="@+id/main_event_donation_amount"/>
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/give_text_color"
+                            android:textSize="10sp"
+                            android:text="W$"
+                            android:typeface="monospace"
+                            android:textStyle="italic|bold"
+                            android:layout_gravity="bottom"
+                            android:src="@drawable/give_w_dollar"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <!-- Profile -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:padding="20dp">
+
+                    <bitwalking.bitwalking.util.RoundImageView
+                        android:id="@+id/profile_image_main"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/profile_default_circle"
+                        android:layout_centerVertical="true"
+                        android:scaleType="fitCenter"
+                        android:onClick="onMenuClick"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:layout_alignBottom="@id/profile_image_main"
+                        android:layout_toRightOf="@id/profile_image_main">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal"
+                            android:id="@+id/new_notifications_layout"
+                            android:visibility="gone">
+                            <ImageView
+                                android:layout_width="10dp"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:layout_marginBottom="5dp"
+                                android:src="@drawable/notifications_black"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="1"
+                                android:textColor="@android:color/black"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginBottom="4dp"
+                                android:textSize="20sp"
+                                android:id="@+id/new_notifications_count"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Share -->
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+
+                    android:gravity="center"
+                    android:onClick="onShareClick">
+
+
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="share"
+                                android:gravity="right"
+                                android:textSize="@dimen/today_action_font_size"
+                                android:typeface="normal"
+
+                                android:textAllCaps="true"
+                                android:textColor="@android:color/black"
+                                android:paddingRight="15dp"
+                                android:onClick="onShareClick"/>
+
+
+                </RelativeLayout>
+
+                <!-- MYDAY -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_wallet_status"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="8dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <bitwalking.bitwalking.util.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="today"
+                            android:textSize="20sp"
+                            android:typeface="normal"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@android:color/black"
+                            android:textAllCaps="true"
+                            android:id="@+id/today_title"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/off_grid_image_layout"
+                            android:visibility="gone"
+                            android:onClick="onNoConnectionClick">
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:src="@drawable/off_grid_icon"
+                                android:layout_centerVertical="true"/>
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 0.00"
+                            android:paddingRight="29dp"
+                            android:paddingTop="0dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="70sp"
+                            android:textStyle="italic|bold"
+                            android:textAllCaps="true"
+                            android:layout_alignParentTop="true"
+                            android:id="@+id/main_user_today"/>
+
+                        <View
+                            android:id="@+id/today_chupchik"
+                            android:layout_width="15dp"
+                            android:layout_height="7dp"
+                            android:layout_alignRight="@id/main_user_today"
+                            android:layout_alignBottom="@id/main_user_today"
+                            android:layout_marginRight="6dp"
+                            android:layout_marginBottom="65dp"
+                            android:visibility="gone"
+                            android:background="@android:color/black"/>
+
+                        <bitwalking.bitwalking.util.BaronNeueTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/black"
+                            android:textSize="20sp"
+                            android:text="W$"
+                            android:typeface="monospace"
+                            android:textStyle="italic|bold"
+                            android:textAllCaps="true"
+                            android:layout_alignRight="@id/main_user_today"
+                            android:layout_alignBottom="@id/main_user_today"
+                            android:paddingBottom="14dp"
+                            android:layout_marginLeft="10dp"
+                            android:id="@+id/today_wdollar_sign"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+    </FrameLayout>
+
+    <!-- The total balance drawer -->
+
+     <include layout="@layout/layout_balance_drawer"
+
+         />
+
+    <!-- The menu drawer -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuDrawerPane"
+        android:layout_gravity="start"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:clickable="true">
+
+        <include
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            layout="@layout/main_menu" />
+
+    </RelativeLayout>
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Title -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_weight="0"
+        android:background="@drawable/black_gradient_background"
+        android:minHeight="52dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:onClick="onExitClick"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:enabled="true"
+                android:onClick="onExitClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <bitwalking.bitwalking.util.RobotoSpacedTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="2dp"
+                android:text="History"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/title_font_size"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/wallet_send_request_button"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:onClick="onSendRequest"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="0dp"
+            android:visibility="gone">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:enabled="true"
+                android:onClick="onSendRequest"
+                android:scaleType="fitCenter"
+                android:src="@drawable/send_receive" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="false"
+        android:layout_weight="1">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:expandedTitleMarginStart="0dp"
+                app:expandedTitleMarginEnd="100dp"
+                android:fitsSystemWindows="true"
+                android:id="@+id/wallet_balance_layout">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_collapseMode="pin"/>
+
+                <!---
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4434D5"
+                    android:layout_weight="0"
+                    app:layout_collapseMode="parallax"
+                    android:fitsSystemWindows="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginBottom="25dp"
+                        android:orientation="vertical">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:layout_centerInParent="true">
+                                <bitwalking.bitwalking.util.BaronNeueTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" 0.00"
+                                    android:textSize="60sp"
+                                    android:textColor="@android:color/white"
+                                    android:id="@+id/wallet_balance"/>
+
+                                <bitwalking.bitwalking.util.BaronNeueTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="15sp"
+                                    android:text="W$"
+                                    android:typeface="monospace"
+                                    android:textStyle="italic|bold"
+                                    android:textAllCaps="true"/>
+                            </LinearLayout>
+                        </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp">
+                            <bitwalking.bitwalking.util.BaronNeueTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text=" available "
+                                android:textStyle="bold"
+                                android:textColor="@android:color/white"
+                                android:layout_centerHorizontal="true"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+                -->
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:clipToPadding="false"-->
+            <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+            <!--android:id="@+id/wallet_transactions_scroll_new">-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="vertical"-->
+                <!--android:id="@+id/wallet_transactions_list">-->
+
+            <!--</LinearLayout>-->
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:id="@+id/wallet_history_list">
+
+            </android.support.v7.widget.RecyclerView>
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <bitwalking.bitwalking.util.BaronNeueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="240dp"
+                android:textSize="17sp"
+                android:text=" mining mode \n no transactions yet "
+                android:gravity="center"
+                android:visibility="gone"
+                android:id="@+id/wallet_text"/>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

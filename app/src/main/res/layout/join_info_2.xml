@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <!-- Country -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="10dp">
+
+        <bitwalking.bitwalking.util.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/color.gray"
+            android:background="@drawable/edittext_background"
+            android:hint="Country"
+            android:textSize="@dimen/text_input_size"
+            android:maxLength="@integer/max_name_len"
+            android:layout_marginRight="@dimen/text_view_margin_right_left"
+            android:layout_marginLeft="@dimen/text_view_margin_right_left"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:typeface="normal"
+            android:id="@+id/join_country_text"/>
+
+    </RelativeLayout>
+
+    <!-- First Name -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="10dp">
+
+        <bitwalking.bitwalking.util.BWEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/color.gray"
+            android:background="@drawable/edittext_background"
+            android:hint="First Name"
+            android:textSize="@dimen/text_input_size"
+            android:maxLength="@integer/max_name_len"
+            android:layout_marginRight="@dimen/text_view_margin_right_left"
+            android:layout_marginLeft="@dimen/text_view_margin_right_left"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:typeface="normal"
+            android:inputType="textCapWords"
+            android:id="@+id/join_first_name"/>
+
+    </RelativeLayout>
+
+    <!-- Last Name -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:layout_marginBottom="10dp">
+
+        <bitwalking.bitwalking.util.BWEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textCursorDrawable="@null"
+            android:textColorHint="@color/color.gray"
+            android:background="@drawable/edittext_background"
+            android:hint="Last Name"
+            android:textSize="@dimen/text_input_size"
+            android:maxLength="@integer/max_name_len"
+            android:layout_marginRight="@dimen/text_view_margin_right_left"
+            android:layout_marginLeft="@dimen/text_view_margin_right_left"
+            android:paddingBottom="10dp"
+            android:inputType="textCapWords"
+            android:singleLine="true"
+            android:cursorVisible="true"
+            android:typeface="normal"
+            android:id="@+id/join_last_name"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

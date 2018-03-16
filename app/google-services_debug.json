@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_id": "bitwalking-f1b86",
+    "project_number": "144586121677",
+    "name": "bitwalking"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144586121677:android:445d2762e490cb8f",
+        "client_id": "android:bitwalking.bitwalking",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "bitwalking.bitwalking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144586121677-pcd8qdmqllq6uqhhqa6m2rt1ir3aumfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bitwalking.bitwalking",
+            "certificate_hash": "5D8582A5969EA9323991A1296C11307B183C6A17"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

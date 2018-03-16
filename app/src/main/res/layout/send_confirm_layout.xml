@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/send_review_background_color">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_gradient_background"
+        android:visibility="visible"
+        android:layout_weight="0">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:onClick="onBackClick"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="15dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/x_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onBackClick"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="review and send"
+                    android:textSize="@dimen/title_font_size"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:textColor="@android:color/white"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/payment_review_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="30dp">
+
+                <include
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    layout="@layout/payment_info_popup_layout"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_weight="0"
+        android:background="#1E1E1E"
+        android:onClick="onSendPayment"
+        android:layout_alignParentBottom="true">
+
+        <bitwalking.bitwalking.util.BaronNeueTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" send "
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textStyle="italic"
+            android:textColor="@android:color/white"
+            android:id="@+id/payment_review_button_text"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

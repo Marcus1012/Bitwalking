@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <TextView
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textColor="@android:color/white"
+        android:text="Discover and make a difference"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:id="@+id/text1View" />
+
+    <TextView
+        android:textSize="15sp"
+        fontPath="fonts/Roboto-Light.ttf"
+        android:gravity="center"
+        android:id="@+id/text2View"
+        android:textColor="@android:color/white"
+        android:text="Test powerfull text!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1View"
+        android:layout_alignRight="@+id/text1View"
+        android:layout_alignEnd="@+id/text1View"
+        android:layout_alignLeft="@+id/text1View"
+        android:layout_alignStart="@+id/text1View" />
+
+</LinearLayout>

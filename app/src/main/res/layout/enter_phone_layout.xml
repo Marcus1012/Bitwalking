@@ -1,0 +1,94 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"
+                android:text="Please enter your country code and phone number"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@drawable/round_solid_light_green_border"
+                android:layout_marginRight="5dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:onClick="onEditCountryCode">
+
+                    <bitwalking.bitwalking.util.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:textSize="@dimen/text_input_size"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="12dp"
+                        android:paddingRight="8dp"
+                        android:id="@+id/country_code"
+                        android:onClick="onEditCountryCode"
+                        android:text=""
+                        android:layout_alignParentTop="true"
+                        android:layout_centerInParent="true"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!-- Phone -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_solid_light_green_border">
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:hint="phone number"
+                    android:textSize="@dimen/text_input_size"
+                    android:layout_marginRight="@dimen/text_view_margin_right_left"
+                    android:layout_marginLeft="@dimen/text_view_margin_right_left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="12dp"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:typeface="normal"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:id="@+id/phone_number"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

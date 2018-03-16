@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transactions_month_background_color">
+
+    <bitwalking.bitwalking.util.RobotoTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/transaction_month_size"
+        android:text=" august 2016"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="13dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:id="@+id/separator_text"/>
+
+</RelativeLayout>

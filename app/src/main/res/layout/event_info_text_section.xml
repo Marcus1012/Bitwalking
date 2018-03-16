@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:visibility="gone"
+            android:src="@drawable/give_icon"
+            android:layout_marginRight="27dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/event_info_section_give_icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="27dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/event_info_section_sub_title_font_size"
+                    android:textColor="@color/event_info_section_sub_title_color"
+                    android:textStyle="bold"
+                    android:id="@+id/event_info_text_section_sub_title"
+                    android:text="DATE &amp; LOCATION"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="27dp"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/event_info_section_sub_title_font_size"
+                    android:lineSpacingExtra="10dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:id="@+id/event_info_text_section_text"
+                    android:text="DATE &amp; LOCATION\n"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/event_join_button_empty_background"
+                    android:text="JOIN EVENT"
+                    android:textColor="#30BECA"
+                    android:textSize="14sp"
+                    android:id="@+id/event_info_join_button"
+                    android:onClick="onJoinEventClick"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

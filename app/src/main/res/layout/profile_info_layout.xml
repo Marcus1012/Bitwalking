@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/profile_info_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/profile_background_color"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_height"
+                android:background="@android:color/black">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@android:color/transparent"
+                    android:paddingTop="0dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:onClick="backClick">
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/back_white"
+                        android:enabled="true"
+                        android:onClick="backClick"
+                        android:layout_centerInParent="true"
+                        android:background="@android:color/transparent" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        fontPath="fonts/Roboto-Bold.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:text="Profile"
+
+                        android:textSize="@dimen/title_font_size"
+                        android:paddingTop="0dp"
+                        android:typeface="normal"
+                        android:textStyle="bold"
+
+                        android:id="@+id/settings_title"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <!-- Dummy to catch focus -->
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"/>
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <FrameLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:background="@color/color.gray.disable"
+                        android:layout_height="115dp">
+
+                        <bitwalking.bitwalking.util.RoundImageView
+                            android:layout_gravity="center"
+                            android:layout_margin="20dp"
+                            android:layout_width="@dimen/menu_profile_image_size"
+                            android:layout_height="@dimen/menu_profile_image_size"
+                            android:src="@drawable/profile_default_circle"
+                            android:id="@+id/profileView"
+                            />
+
+
+
+
+                    </FrameLayout>
+
+
+                    <FrameLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                  <ImageView
+                      android:layout_gravity="end|center"
+                      android:layout_width="30dp"
+                      android:layout_height="30dp"
+                      android:src="@drawable/ic_chevron_right"
+                      />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color.gray"
+                                fontPath="fonts/Roboto-Regular.ttf"
+                                android:textSize="16sp"
+                                android:text="First Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/nameView"
+                                android:textColor="@android:color/black"
+                                fontPath="fonts/Roboto-Bold.ttf"
+                                android:textSize="20sp"
+                                android:text="Nissan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                <FrameLayout
+                android:background="@color/color.gray.disable"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+                    <FrameLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:layout_gravity="end|center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_chevron_right"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color.gray"
+                                fontPath="fonts/Roboto-Regular.ttf"
+                                android:textSize="16sp"
+                                android:text="Last Name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/lastView"
+
+                                android:textColor="@android:color/black"
+                                fontPath="fonts/Roboto-Bold.ttf"
+                                android:textSize="20sp"
+                                android:text="Bahar"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:background="@color/color.gray.disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <FrameLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:layout_gravity="end|center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_chevron_right"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color.gray"
+                                fontPath="fonts/Roboto-Regular.ttf"
+                                android:textSize="16sp"
+                                android:text="Email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/emailView"
+                                android:textColor="@android:color/black"
+                                fontPath="fonts/Roboto-Bold.ttf"
+                                android:textSize="20sp"
+                                android:text="nissanbahar@gmail.com"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:background="@color/color.gray.disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <FrameLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:layout_gravity="end|center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_chevron_right"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color.gray"
+                                fontPath="fonts/Roboto-Regular.ttf"
+                                android:textSize="16sp"
+                                android:text="Password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:textColor="@android:color/black"
+                                fontPath="fonts/Roboto-Bold.ttf"
+                                android:inputType="textPassword"
+                                android:textSize="20sp"
+                                android:text="Nissan"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:background="@color/color.gray.disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                    <FrameLayout
+                        android:padding="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+                        <ImageView
+                            android:layout_gravity="end|center"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_chevron_right"
+                            />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_gravity="center|left"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="@color/color.gray"
+                                fontPath="fonts/Roboto-Regular.ttf"
+                                android:textSize="16sp"
+                                android:text="Phone Number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+                            <TextView
+                                android:id="@+id/phoneView"
+                                android:textColor="@android:color/black"
+                                fontPath="fonts/Roboto-Bold.ttf"
+                                android:textSize="20sp"
+                                android:text="+972 55 1234 567"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                    <FrameLayout
+                        android:background="@color/color.gray.disable"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"/>
+
+
+                </LinearLayout>
+
+
+
+
+            </ScrollView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</FrameLayout>

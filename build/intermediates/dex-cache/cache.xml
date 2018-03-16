@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\d3ebb4aa127137a49364efdb7304db4e548b6eef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7d67042688d34474a82fe4ef4c6514ef471377ef">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7b17e3d9816c9ebf7ea43d56e19be0af2b3f466d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\8e733d2c4f1d0eb4872700bf21bea1e9bf977503\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4803488041c259d0b6d81ca4255379ab8a7e8dfe">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_34f10dfc8325c2d5f6c65a9f53c9d7a4538be144\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\ff40a2bef8e5ddcd7f2c0005295d8ee4d32e233a\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a1aa1dd9917e887bfe732cc5e561ae6ae8f9a84a">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b9f07011b5122e754775c167ac30eddf4c112d66\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\4dcea7abbf87edb67b1f004c989ef2c98444e1f3\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b24b44e75d1c1592f98a0974101a0748f409f0b2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\46d874892a72b67cbc06815b05f0fc7d3438bc73\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a3826817a4de1daa170c33bbc04db24ab6826bd5">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_06ea4bc031f36cd2be85a1e4c51fd7625f3f16a3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\912495ef979a571ddfb516c62d8a3ab673ee0cfb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bb115a110992b254f767f337da233071f6f940b8">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ce17b426594c5aa5b76b818d39d76234dc9449f0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\22c48a0828c2e59a3fbb3ad27185ef23c648a696\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cfa40983f47c1b9a9f2ac940ee6da130cd03c6e1">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1c4991075c20d067b35600be352b15360cfd9aca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\b034d6ff0c6a6bc76b4c96dd47aec593afd33e6c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5905242bbeecdf6d90875f3eec87d7a1353d0dc3">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c8080edcf14b1c2f507e6c2dfe1d6771a7c56a32\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\2af8e0b240f4bf6e0c0781e10fdbac43b98f4394\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="888983f51cf34f57a93ff16832552f2f15937212">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_23cc8ac4842328463a94544692b63c234b5ec041\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\feb2a65d97d69793b50adc8eb9c5408b3753e8e1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_12fe99fcf37d2d79e1ee0416d06fe85498f7ac3b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\45acb3a1af3aad26be209bea77c92d2a15896308\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f6bb4ddac5de0ce9b232261b0540e08b8efd662f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\e65218bc3f178e2b5645c38817bddad3e7c2528c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="399f75732ff1ac159f9e73611536f1508bf18d3b">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fef67802b5e234904b91956b01669ed02a14df36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\1ca0ef8d4665d0bc408ea05ff1713ac75b146425\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c3c7f923e1df76640acb3a24823600f034a5d226">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28edaabe93dd2ac949a068219b5f912ff51de0e3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\900351d55a1ad21e145308d4f7784edba9690d46\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7780b9aba418f4e22878f48cd77372a7688bb0b7">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_83ba67992d88df51f7e23c82f10b2929c3c1b552\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\5d9dab6d50e610114846a2007e89e0b8d37a45c4\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1f9df8b2bfff203397548ee400789154968adfe8">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2a5cb7a48ac4c2e5b66fefbe8b0f65eafa891c9f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.gradle\caches\modules-2\files-2.1\com.googlecode.libphonenumber\libphonenumber\7.7.2\cd8d19bcf2067c0c532c2547e6361cfa0cc7c78\libphonenumber-7.7.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0cd8d19bcf2067c0c532c2547e6361cfa0cc7c78">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\libphonenumber-7.7.2_212b75b1d707ae5c393e18c8e04e99873ab1082f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\d2d6b21603541c32c9229a3e0ebf30c3bfd0a9c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_619a8d628cdb17667c289d5f2b543742286165df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\a12a9b98d9e66156082c42737b4e7c49e3d7669b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6314fd1ca55eb2a72d2f6030e4996a2a806eaf25">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a6d75ba35b7d1704646546b29a22f6e8baf4b31c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\27769ff8bae43922089269d35a112fe44e87ae96\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e4851331b3944beb6e7f77316a7661f53781da62">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d35df4a794a4a21d68a75a9a8485ae279fe7eff8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\41b33b9ede08c5531896fd27d686341d75edceec\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efae381df589f3d4977c346c8a980f030315bb8b">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_bffcc3cb74919ad459343db23c7ca7abcb7b1c03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\cebb5fc30481a58bfbf2196d82ad399dfc1f245c\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a76b07a416089228adc86fecc86d0a6e2d71e409">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f853a442a696112b47adaeb55017e5ee2e1dc111\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\c3097abd7cf4c7e4de4d3d01b010a4127d9889f0\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef01b734d9d89338a932928c237c7b741f007af">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_7610c34313dd58ba73e9c829a9e9ee3f118441de\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidProjects\Bitwalking\bitwalking-android\app\libs\signpost-core-1.2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47d92007ca13efd47efad1af94d842ecb5066310">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\2\signpost-core-1.2.1.1_4ee00f8f7b16a5bf73922229e9f107bfaba18231\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidProjects\Bitwalking\bitwalking-android\app\libs\commons-codec-1.10.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\2\commons-codec-1.10_4a28d5faaecf13aafb6305585dd0686d1ff81463\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\70e4121ae0910adaac7ce3f420761f42998cc1af\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b215e312bdc1ee7bfda31674eab5df8bad45c014">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0ccdb3ffbae9ddf23cd15b4517b208f0cb731007\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\User\.android\build-cache\6e10e63c5f1aabd2a6b4e42d85493c400dd5f864\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0a5d5553c308643a9022f15513ebdd59e9c78d82">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d68683f52a4aba04a7a3f57f4565430fb76905b1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AndroidProjects\Bitwalking\bitwalking-android\app\libs\login-with-amazon-sdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="520d1d2259e6588b51322597920b4274e88db093">
+        <dex dex="C:\AndroidProjects\Bitwalking\bitwalking-android\app\build\intermediates\transforms\dex\debug\folders\1000\2\login-with-amazon-sdk_e74b64795659036a6460b05d85ef87f49c1493a9\classes.dex" />
+    </item>
+
+</items>

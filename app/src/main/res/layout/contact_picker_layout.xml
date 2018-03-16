@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/balance_background_color">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal"
+            android:background="@drawable/black_gradient_background">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:onClick="onBackClick"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onBackClick"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="contacts"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_font_size"
+                    android:textAllCaps="false"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/contacts_title"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="@dimen/contact_margin_left"
+        android:layout_marginRight="@dimen/contact_margin_left">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@android:color/white"
+                android:text="To:"
+                android:layout_marginRight="15dp"/>
+
+            <bitwalking.bitwalking.util.BWEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-light"
+                android:hint="Name, email"
+                android:textCursorDrawable="@null"
+                android:background="@null"
+                android:id="@+id/contact_search_text"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginLeft="@dimen/contact_margin_left"
+        android:layout_marginBottom="26dp"
+        android:id="@+id/all_my_contacts_text_view">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#E6E7E8"
+            android:text="all my contacts"
+            android:textAllCaps="true"
+            android:fontFamily="sans-serif-medium"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/contacts_list"/>
+
+</LinearLayout>

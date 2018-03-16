@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/send_request_background_color">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:layout_marginTop="0dp"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:onClick="onBackClick"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="12dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onBackClick"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_and_request"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <bitwalking.bitwalking.util.BaronNeueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 0.00"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp"
+                android:textColor="@android:color/white"
+                android:textSize="56sp"
+                android:typeface="monospace"
+                android:textStyle="italic|bold"
+                android:textAllCaps="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/send_request_amount"/>
+
+            <bitwalking.bitwalking.util.BaronNeueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:text="W$"
+                android:typeface="monospace"
+                android:textStyle="italic|bold"
+                android:textAllCaps="true"
+                android:layout_alignRight="@id/send_request_amount"
+                android:layout_alignBottom="@id/send_request_amount"
+                android:paddingBottom="10dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/payment_request_button">
+            <bitwalking.bitwalking.util.BaronNeueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@android:color/transparent"
+                android:text=" request "
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:id="@+id/payment_send_button">
+            <bitwalking.bitwalking.util.BaronNeueTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@android:color/transparent"
+                android:text=" send "
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF1E1E1E">
+
+        <bitwalking.bitwalking.util.MyDigitsKeyboard
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/send_request_digits"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

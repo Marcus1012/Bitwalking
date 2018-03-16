@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/misfit_scanning_item_progress"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:id="@+id/device_info_layout"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/misfit_device_item_height"
+            android:layout_height="@dimen/misfit_device_item_height"
+            android:src="@drawable/misfit_shine"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp">
+
+                <bitwalking.bitwalking.util.RobotoTextView
+                    android:id="@+id/device_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="misfit device"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+                <bitwalking.bitwalking.util.RobotoTextView
+                    android:id="@+id/device_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="misfit device address"
+                    android:layout_centerVertical="true"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/misfit_device_item_height"
+            android:layout_height="@dimen/misfit_device_item_height">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/device_selected_image"
+                android:src="@drawable/vote_product_selected_v"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_background">
+
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter PIN code:"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:paddingBottom="20dp">
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/pin_popup_code_1"/>
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/pin_popup_code_2"/>
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/pin_popup_code_3"/>
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberPassword"
+                    android:maxLength="1"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:id="@+id/pin_popup_code_4"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Cancel / Ok -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/edit_text_background"
+                android:layout_alignParentTop="true"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:paddingTop="10dp">
+
+                <bitwalking.bitwalking.util.DolceVitaButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Cancel"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_text_lines"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/pin_code_popup_cancel"
+                    android:layout_weight="1"/>
+
+                <bitwalking.bitwalking.util.DolceVitaButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="Ok"
+                    android:textAllCaps="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue_text_lines"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:id="@+id/pin_code_popup_ok"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/edit_text_background"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

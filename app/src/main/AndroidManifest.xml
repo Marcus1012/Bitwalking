@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="bitwalking.bitwalking" >
+
+    <!--<uses-sdk tools:overrideLibrary="com.misfit.ble"/>-->
+    <uses-sdk
+        android:targetSdkVersion="23"
+        android:minSdkVersion="15"
+        tools:overrideLibrary="com.misfit.ble"/>
+    
+    <uses-permission-sdk-18 android:name="android.permission.BLUETOOTH"/>
+    <uses-permission-sdk-18 android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <uses-feature android:name="android.hardware.location" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="true"/>
+
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false" tools:node="replace"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" tools:node="replace"/>
+
+    <application
+        android:name=".BitwalkingApp"
+        android:allowBackup="false" tools:replace="allowBackup"
+        android:icon="@drawable/go_black"
+        android:label="@string/app_name"
+        android:hardwareAccelerated="true"
+        android:theme="@style/MyBwAppTheme" >
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBZz67AXp-7paeL0w0sNQ59lcF9JCEUB4U"/>
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="bitwalking.bitwalking.fileprovider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <activity
+            android:theme="@style/Theme.Transparent"
+            android:name=".activityes.MainActivity"
+            android:configChanges="orientation"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="OPEN_EXTRA" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".settings.CountryPickerActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".mvi.events.EventsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".events.EventSpecificActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activityes.CompleteProfileActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activityes.WalletActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activityes.OffGridActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activityes.WhatToDoActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".activityes.LegalActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".mvi.profile.ProfileActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/ThemeBlackTitle"
+            android:windowSoftInputMode="adjustResize">
+        </activity>
+        <activity
+            android:name=".settings.ChangePasswordActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".settings.ChangeEmailActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".mvi.forgot_password.ForgotPasswordActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/WhiteActionBar"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".mvi.forgot_password.complete.ActivityComplite"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".mvi.reset_password.ResetPasswordActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name=".mvi.registration.ActivityDone"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".activityes.DebugLogsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activityes.BuySellActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".transactions.ui.SendRequestActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity android:name=".transactions.ui.ConfirmPaymentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:name=".settings.InviteBusinessActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".invite_user.InvitationRegistrationActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".invite_user.UserInviteActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="bitwalking.misfit.MisfitDeviceListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".registration_and_login.PhoneVerificationActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".registration_and_login.JoinActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".vote_product.VoteProductActivity"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".mvi.notification.ActivityNotifications"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".mvi.settings.ActivitySettings"
+            android:configChanges="orientation"
+            android:theme="@style/Theme.Transparent"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".mvi.registration.ActivityFirstName"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/MyBwAppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity android:name=".mvi.registration.ActivityLastName"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/MyBwAppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".mvi.registration.ActivityEmail"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/MyBwAppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".mvi.registration.ActivityPassword"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateVisible|adjustResize"
+            android:theme="@style/MyBwAppTheme"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+        <activity
+            android:name=".mvi.login.LoginActivity"
+            android:configChanges="orientation"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.Transparent"
+
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".registration_and_login.GoActivity"
+          android:theme="@style/SplashTheme"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".mvi.welcome.ActivityWelcome"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activityes.DispatcherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            android:clearTaskOnLaunch="true"
+            android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="http" android:host="bitwalking.com" />
+                <data android:scheme="https" android:host="bitwalking.com" />
+                <data android:scheme="http" android:host="www.bitwalking.com" />
+                <data android:scheme="https" android:host="www.bitwalking.com" />
+                <data android:scheme="https" android:host="email.bitwalking.com" />
+                <data android:scheme="https" android:host="messaging.bitwalking.com" />
+                <data android:scheme="https" android:host="messaging.dev.bitwalking.com" />
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <data
+                    android:scheme="bitwalking"
+                    android:host="bitwalking.com"/>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name=".remote_service.BwService"
+            android:process=":remote"
+            android:exported="false">
+        </service>
+        <!--<receiver-->
+            <!--android:name=".remote_service.BwServiceReceiver">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.location.PROVIDERS_CHANGED" />-->
+                <!--<action android:name="android.intent.action.BATTERY_LOW" />-->
+                <!--<action android:name="android.intent.action.BATTERY_OKAY" />-->
+                <!--<action android:name="bitwalking.bitwalking.PERIODIC_TASK" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <service
+            android:name=".notifications.BitwalkingFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name=".notifications.BitwalkingFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service
+            android:name="bitwalking.misfit.MisfitService"
+            android:enabled="true"/>
+        <service
+            android:name="bitwalking.misfit.MisfitServiceRemote"
+            android:enabled="true"/>
+        <receiver
+            android:name=".boot.StartBitwalkingAtBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <!-- Fabric -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f59614f7087d1242f796fde39d2062e2086fd2e6"/>
+    </application>
+
+</manifest>

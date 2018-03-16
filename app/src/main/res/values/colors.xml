@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_background">#f4f4f4</color>
+    <color name="menu_background_start">#00BBBBBB</color>
+    <color name="menu_background_end">#70555555</color>
+    <color name="menu_item_selected_background">#232325</color>
+    <color name="menu_item_background">@android:color/transparent</color>
+    <color name="menu_item_text_color">#000000</color>
+    <color name="menu_item_selected_text_color">#FFFFFF</color>
+    <color name="menu_item_delimiter_color">#A0A0A0</color>
+    <color name="login_background">#f4f4f4</color>
+    <color name="gray_background">#444444</color>
+    <color name="give_text_color">#B2B2B2</color>
+    <color name="white_background">#FFFFFF</color>
+    <color name="blue_text_lines">#2395D2</color>
+    <color name="dark_blue_text">#0C5F8E</color>
+    <color name="edit_text_background">#1032caa7</color>
+    <color name="profile_edit_text">#FFFFFF</color>
+    <color name="profile_background_color">#FFFFFF</color>
+    <color name="profile_text_color">#000000</color>
+    <color name="vote_product_divider_color">#60AAAAAA</color>
+    <color name="cool_green">#32caa7</color>
+    <color name="balance_background_color">#4A27D5</color>
+
+
+    <color name="color.tranperent30">#59000000</color>
+    <color name="color.gray">#B1B1B3</color>
+    <color name="color.gray.disable">#EFF0F2</color>
+
+    <!-- Today text colors -->
+    <color name="off_grid_text_color">#4c000000</color>
+    <color name="on_grid_text_color">#ff000000</color>
+
+    <!-- login / sign up -->
+
+
+    <!--events-->
+    <color name="event_list_item_background">#353535</color>
+    <color name="event_info_section_sub_title_color">#007AA7</color>
+
+    <!-- Send Request -->
+    <color name="send_request_background_color">#550FD5</color>
+
+    <!-- Transactions -->
+    <color name="transactions_secondary_text_color">#7E7E7E</color>
+    <color name="transactions_month_background_color">#CBCBCB</color>
+
+    <!-- Mining History -->
+    <color name="mining_amount_text_color">#4434D5</color>
+
+    <!-- Send Review -->
+    <color name="send_review_background_color">#550FD5</color>
+    <color name="send_review_name_email_text_color">#231F20</color>
+    <color name="send_review_status_text_color">#95989A</color>
+    <color name="send_review_note_hint_color">#58595B</color>
+
+</resources>

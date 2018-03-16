@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:id="@+id/vote_root_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:paddingTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:onClick="onBackClick">
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_white"
+                android:enabled="true"
+                android:onClick="onBackClick"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <bitwalking.bitwalking.util.DolceVitaTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:text="store"
+                android:textSize="@dimen/title_font_size"
+                android:paddingTop="2dp"
+                android:typeface="normal"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/settings_title"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:background="#f6f6f6">
+
+        <bitwalking.bitwalking.util.RobotoSpacedTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:singleLine="false"
+            android:minLines="3"
+            android:textSize="16sp"
+            android:text="@string/vote_products_text"
+            android:fontFamily="sans-serif-light"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:lineSpacingExtra="3dp"
+            android:scaleX="1"
+            android:id="@+id/vote_product_main_text"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/vote_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice"
+            android:scrollbars="vertical"
+            android:dividerHeight="0dp"
+            android:divider="@android:color/transparent"
+            android:background="@android:color/transparent"
+            android:id="@+id/vote_product_list"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

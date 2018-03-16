@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/market_linear_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_background"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <ProgressBar
+            android:id="@+id/market_banners_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
+        <android.support.v4.widget.DrawerLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/market_drawer_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent">
+
+            <android.support.v4.view.ViewPager
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/market_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </android.support.v4.widget.DrawerLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="13dp"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:id="@+id/market_banner_idx_layout">
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <bitwalking.bitwalking.util.DolceVitaButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/market_button_height"
+        android:id="@+id/market_create_wishlist_button"
+        android:text="M A N A G E  W I S H  L I S T"
+        android:typeface="normal"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/market_button_text_size"
+        android:textAlignment="center"
+        android:background="#000000"/>
+
+    <bitwalking.bitwalking.util.DolceVitaButton
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/market_button_height"
+        android:id="@+id/market_invite_button"
+        android:text="I N V I T E  F R I E N D S"
+        android:typeface="normal"
+        android:textStyle="normal"
+        android:textColor="#000000"
+        android:textSize="@dimen/market_button_text_size"
+        android:textAlignment="center"
+        android:background="#e5e5e5"
+        android:onClick="onInviteClick"/>
+
+</LinearLayout>

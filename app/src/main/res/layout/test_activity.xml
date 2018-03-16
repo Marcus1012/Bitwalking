@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="clear"
+                android:layout_centerInParent="true"
+                android:id="@+id/test_clear_button"
+                android:onClick="onClick"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="put me"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_putme_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="get me"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_getme_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="put image"
+                    android:id="@+id/test_putimage_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="get image"
+                    android:id="@+id/test_getimage_button"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="get survey"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_getsurvey_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="post steps"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_poststeps_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="post business"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_postbusiness_button"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="verify pass"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_verifypass_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="fail session"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_failsession_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="check session"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_checksession_button"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="balance"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_getbalance_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="today"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_gettoday_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="timestamp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_gettimestamp_button"
+                    android:onClick="onClick"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="events"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/test_getevents_button"
+                    android:onClick="onClick"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_weight="0">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/test_output_text"
+            android:layout_margin="10dp"
+            android:maxLines="200"
+            android:scrollbars="vertical"
+            android:background="#f0f0f0"/>
+    </RelativeLayout>
+
+</LinearLayout>

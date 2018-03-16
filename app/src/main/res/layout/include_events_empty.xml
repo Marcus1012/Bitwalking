@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_welcome"
+        />
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:padding="10dp"
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:text="Stay tuned for the
+next Bitwalking event"
+            android:id="@+id/textView2" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:padding="10dp"
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:text="With Bitwalking Events you can
+raise funds for good causes and
+participate in local and global
+initiatives. "
+
+            android:layout_below="@id/textView2"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</FrameLayout>

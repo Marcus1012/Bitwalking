@@ -1,0 +1,99 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!-- Title -->
+    <dimen name="title_height">56dp</dimen>
+    <dimen name="title_font_size">22sp</dimen>
+
+    <!-- Send & Request view -->
+    <dimen name="send_request_button_width">50dp</dimen>
+    <dimen name="send_request_button_height">50dp</dimen>
+
+    <!-- Today -->
+    <dimen name="today_action_font_size">17sp</dimen>
+    <dimen name="give_text_size">35sp</dimen>
+
+    <!-- Menu -->
+    <dimen name="menu_margin_left_right">20dp</dimen>
+    <dimen name="menu_margin_top">18dp</dimen>
+    <dimen name="menu_margin_bottom">13dp</dimen>
+
+    <dimen name="menu_title_margin">20dp</dimen>
+    <dimen name="menu_profile_image_size">70dp</dimen>
+    <dimen name="menu_item_text_size">20sp</dimen>
+    <dimen name="menu_item_small_text_size">12sp</dimen>
+    <dimen name="menu_item_icon_size">35dp</dimen>
+    <dimen name="menu_item_height">40dp</dimen>
+    <dimen name="menu_item_top_margin">8dp</dimen>
+    <dimen name="menu_item_bottom_margin">8dp</dimen>
+    <dimen name="menu_item_left_margin">28dp</dimen>
+    <dimen name="menu_item_text_left_margin">18dp</dimen>
+
+    <!-- Registration Views -->
+    <dimen name="login_button_text_size">20sp</dimen>
+    <dimen name="circle_diameter">8dp</dimen>
+    <dimen name="space_between_circles">4dp</dimen>
+    <dimen name="text_input_size">20sp</dimen>
+    <dimen name="input_height_size">18dp</dimen>
+    <dimen name="text_view_margin_right_left">40dp</dimen>
+    <dimen name="user_agreement_size">13sp</dimen>
+
+    <!-- Settings -->
+    <dimen name="settings_item_height">48dp</dimen>
+    <dimen name="settings_category_separate_height">15dp</dimen>
+    <dimen name="settings_edit_image_button_size">24dp</dimen>
+    <dimen name="settings_edit_button_size">26dp</dimen>
+
+    <!-- Market -->
+    <dimen name="market_button_height">60dp</dimen>
+    <dimen name="market_button_text_size">20sp</dimen>
+
+    <!-- Vote Products -->
+    <dimen name="vote_product_item_height">110dp</dimen>
+    <dimen name="vote_product_title_height">110dp</dimen>
+
+    <!-- Wishlist -->
+    <dimen name="wishlist_item_text_size">20sp</dimen>
+
+    <!-- Fragment Transaction Duration -->
+    <integer name="fragment_transaction_duration">300</integer>
+
+    <!-- Notifications -->
+    <dimen name="notification_minimum_height">80dp</dimen>
+    
+    <!-- Misfit config -->
+    <dimen name="misfit_device_item_height">70dp</dimen>
+
+    <!-- Complete Profile -->
+    <dimen name="complete_text_side_margin">40dp</dimen>
+    <dimen name="complete_profile_text_size">17sp</dimen>
+
+    <!-- Profile info -->
+    <dimen name="profile_title_size">18sp</dimen>
+    <dimen name="profile_info_size">17sp</dimen>
+
+    <!-- Events -->
+    <dimen name="event_list_item_height">130dp</dimen>
+    <dimen name="event_info_section_tab_height">45dp</dimen>
+    <dimen name="event_info_section_sub_title_font_size">15sp</dimen>
+
+    <!-- Transactions -->
+    <dimen name="transaction_profile_diameter">37dp</dimen>
+    <dimen name="transaction_profile_initials_size">16sp</dimen>
+    <dimen name="transaction_title_size">17sp</dimen>
+    <dimen name="transaction_to_from_size">16sp</dimen>
+    <dimen name="transaction_amount_size">17sp</dimen>
+    <dimen name="transaction_status_size">12sp</dimen>
+    <dimen name="transaction_month_size">14sp</dimen>
+
+    <!-- Send Review -->
+    <dimen name="send_review_profile_diameter">54dp</dimen>
+    <dimen name="send_review_profile_initials_size">20sp</dimen>
+
+    <!-- Contacts -->
+    <dimen name="contact_profile_image_size">54dp</dimen>
+    <dimen name="contact_name_size">54dp</dimen>
+    <dimen name="contact_email_size">54dp</dimen>
+    <dimen name="contact_margin_left">23dp</dimen>
+
+</resources>

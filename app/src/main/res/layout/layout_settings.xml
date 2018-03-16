@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/black_gradient_background">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal">
+
+            <!-- Cancel -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:onClick="onBackClick"
+                android:layout_alignParentLeft="true">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/back_white"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:onClick="onBackClick"/>
+            </RelativeLayout>
+
+            <!-- Title -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Settings"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/title_font_size"
+                    fontPath="fonts/Roboto-Bold.ttf"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:background="@color/color.gray.disable"
+           android:layout_height="115dp">
+
+           <bitwalking.bitwalking.util.RoundImageView
+               android:layout_gravity="center"
+               android:layout_margin="20dp"
+               android:layout_width="@dimen/menu_profile_image_size"
+               android:layout_height="@dimen/menu_profile_image_size"
+               android:src="@drawable/profile_default_circle"
+               android:id="@+id/profileView"
+               />
+
+           <TextView
+               android:id="@+id/nameView"
+               android:gravity="center|left"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               fontPath="fonts/Roboto-Bold.ttf"
+               android:text="User name"
+               android:textSize="20sp"
+               android:textColor="@android:color/black"
+               />
+
+
+       </LinearLayout>
+
+
+
+
+        <Switch
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            fontPath="fonts/Roboto-Bold.ttf"
+            android:id="@+id/switch1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notification" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:text="Recive notifications about transactions"
+            android:textSize="16sp"
+            android:textColor="@color/color.gray"
+
+            />
+
+        <View
+            android:background="@color/color.gray.disable"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+        <Switch
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            fontPath="fonts/Roboto-Bold.ttf"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Touch ID" />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            fontPath="fonts/Roboto-Regular.ttf"
+            android:text="Use Touch ID to access you account. Please do not use this option if you share your device. "
+            android:textSize="16sp"
+            android:textColor="@color/color.gray"
+
+            />
+
+        <View
+            android:background="@color/color.gray.disable"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+
+
+    </LinearLayout>
+
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       fontPath="fonts/Roboto-Bold.ttf"
+       android:textAllCaps="false"
+       android:background="@android:color/transparent"
+       android:text="Log Out"
+       android:id="@+id/logoutView"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentBottom="true"
+       android:textColor="@android:color/black"
+       android:textSize="20sp"
+       android:onClick="onNextClick"
+       />
+
+    </RelativeLayout>
+
+</LinearLayout>

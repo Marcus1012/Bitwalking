@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="#151618">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Profile -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="#212526"
+            android:layout_marginBottom="10dp"
+            android:onClick="onProfileClick">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/menu_profile_image_size"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true">
+
+                <!-- Image -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp">
+                    <bitwalking.bitwalking.util.RoundImageView
+                        android:layout_width="@dimen/menu_profile_image_size"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profile_default_circle"
+                        android:id="@+id/main_menu_profile_image"
+                        android:layout_centerInParent="true"/>
+                </RelativeLayout>
+
+                <!-- Name + "Profile" -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_centerVertical="true">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:id="@+id/main_menu_profile_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="2dp"
+                                android:text=""
+                                android:textStyle="bold"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Profile"
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_marginTop="2dp"/>
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:fillViewport="true"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+
+
+
+
+
+            <!-- Options -->
+            <LinearLayout
+                android:id="@+id/menuBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Wallet Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onWalletClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="History"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Events Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onEventsClick"
+                    android:id="@+id/main_menu_events"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Events"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Sell Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:onClick="onSellClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Buy / Sell W$"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Notifications Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:onClick="onNotificationsClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Notifications"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <!-- Invite Friends Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInviteFriendsClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Invite Friends"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Invite Business Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onInviteBusinessClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:typeface="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Invite Business"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onSettingsClick">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:typeface="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Settings"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- FAQ Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onFAQClick"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:typeface="monospace"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/action_help"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- Logs Option -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="onLogsClick"
+                    android:visibility="gone"
+                    android:id="@+id/logs_menu_item_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Logs"
+                                android:textColor="#ecedef"
+                                android:textSize="@dimen/menu_item_text_size"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+                <RelativeLayout
+                    android:id="@+id/version_app_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:layout_below="@+id/menuBox">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/menu_item_height"
+                        android:layout_marginBottom="@dimen/menu_item_bottom_margin"
+                        android:layout_marginTop="@dimen/menu_item_top_margin"
+                        android:orientation="horizontal">
+
+
+                        <!-- Option name -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/menu_item_text_left_margin">
+
+                            <bitwalking.bitwalking.util.RobotoTextView
+                                android:id="@+id/versionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="8dp"
+                                android:text="Version "
+                                android:textColor="@android:color/darker_gray"
+                                android:textSize="@dimen/menu_item_small_text_size" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

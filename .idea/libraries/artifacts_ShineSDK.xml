@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="artifacts:ShineSDK">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ShineSDK.aar/30012b49e5f93f6bd311be89e0e3fd7e/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ShineSDK.aar/30012b49e5f93f6bd311be89e0e3fd7e/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

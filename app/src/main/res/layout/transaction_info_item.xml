@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp">
+
+        <!-- Profile Image -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0">
+
+            <ImageView
+                android:layout_width="@dimen/transaction_profile_diameter"
+                android:layout_height="@dimen/transaction_profile_diameter"
+                android:src="@drawable/avatar"
+                android:visibility="gone"
+                android:id="@+id/transaction_profile_image"/>
+
+            <RelativeLayout
+                android:layout_width="@dimen/transaction_profile_diameter"
+                android:layout_height="@dimen/transaction_profile_diameter"
+                android:background="@drawable/transaction_default_profile_image"
+                android:id="@+id/transaction_default_profile_image">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SG"
+                    android:textSize="@dimen/transaction_profile_initials_size"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="sans-serif-light"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/transaction_default_profile_initials"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!-- Title + Text-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <!-- Title -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/transaction_title_size"
+                        android:text="Sent"
+                        android:textColor="@android:color/black"
+                        android:id="@+id/transaction_title"/>
+
+                </RelativeLayout>
+
+                <!-- To / From -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/transaction_to_from_size"
+                        android:text="to Stas Greenberg"
+                        android:textColor="@color/transactions_secondary_text_color"
+                        android:id="@+id/transaction_to_from_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp">
+
+                <!-- Amount -->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/transaction_amount_size"
+                        android:textColor="@android:color/black"
+                        android:text=" 25.00 W$"
+                        android:id="@+id/transaction_amount"/>
+
+                </RelativeLayout>
+
+                <!-- Status -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/transaction_status_size"
+                        android:textColor="@color/transactions_secondary_text_color"
+                        android:text="Paid"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/transaction_status"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

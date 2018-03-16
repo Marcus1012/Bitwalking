@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/color.gray"
+                android:text="@string/phone_verification_explain"/>
+        </RelativeLayout>
+
+        <!-- Phone -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_marginRight="@dimen/text_view_margin_right_left"
+                android:layout_marginLeft="@dimen/text_view_margin_right_left">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="46dp"
+                    android:onClick="onEditCountryCode">
+
+                    <bitwalking.bitwalking.util.RobotoTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_input_size"
+                        android:paddingRight="@dimen/text_view_margin_right_left"
+                        android:textColor="@color/color.gray"
+                        android:id="@+id/join_country_phone_text"
+                        android:text="Israel (+972)"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="0.5dp"
+                        android:paddingTop="0dp"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/grey_underline_background"
+                        android:layout_alignParentBottom="true"/>
+
+                </RelativeLayout>
+
+                <!-- Phone -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="10dp">
+
+                    <bitwalking.bitwalking.util.BWEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/white"
+                        android:textCursorDrawable="@null"
+                        android:textColorHint="@color/color.gray"
+                        android:hint="Phone"
+                        android:textSize="@dimen/text_input_size"
+                        android:paddingBottom="6dp"
+                        android:maxLines="1"
+                        android:cursorVisible="true"
+                        android:typeface="normal"
+                        android:inputType="phone"
+                        android:maxLength="15"
+                        android:imeActionId="@+id/done_form"
+                        android:imeActionLabel="Done"
+                        android:imeOptions="actionDone"
+                        android:background="@drawable/edittext_background"
+                        android:id="@+id/join_phone"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:visibility="visible"
+            android:id="@+id/user_agreement_policy_layout">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerInParent="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <bitwalking.bitwalking.util.RobotoTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/user_agreement_size"
+                        android:textColor="@android:color/white"
+                        android:fontFamily="sans-serif-light"
+                        android:text="By clicking next you accept the Bitwalking"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true">
+
+                        <bitwalking.bitwalking.util.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/user_agreement_size"
+                            android:textColor="@android:color/white"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/user_agreement_text"
+                            android:onClick="onUserAgreementClick"/>
+
+                        <bitwalking.bitwalking.util.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/user_agreement_size"
+                            android:fontFamily="sans-serif-light"
+                            android:textColor="@android:color/white"
+                            android:text=" and "/>
+
+                        <bitwalking.bitwalking.util.RobotoTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/user_agreement_size"
+                            android:fontFamily="sans-serif-light"
+                            android:text="@string/privacy_policy_text"
+                            android:textColor="@android:color/white"
+                            android:onClick="onPrivacyPolicyClick"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

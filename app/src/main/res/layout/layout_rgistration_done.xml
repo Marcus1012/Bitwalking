@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_blure"/>
+
+    <Button
+        android:id="@+id/doneView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:background="@android:color/transparent"
+        android:text="Done"
+        android:onClick="onDoneClick"
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:layout_marginBottom="20dp"
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/nameView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="
+It’s great to have
+you with us!"
+            android:gravity="left"
+            android:textSize="30sp"
+            android:textColor="@android:color/white"
+            fontPath="fonts/Roboto-Bold.ttf"
+            />
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We have sent you a verification email
+to validate your account.
+
+Please wait for your invitation.
+We will update you when we are
+ready for you to sign in.     "
+            android:gravity="left"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            fontPath="fonts/Roboto-Light.ttf"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

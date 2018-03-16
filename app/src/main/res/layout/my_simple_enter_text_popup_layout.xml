@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40FFFFFF">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D0D0D0"
+        android:alpha="0.5"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/popup_round_background">
+
+        <ProgressBar
+            android:id="@+id/simple_popup_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_centerInParent="true">
+        </ProgressBar>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical"
+            android:id="@+id/simple_popup_mail_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="25dp"
+                android:layout_marginTop="15dp">
+                <bitwalking.bitwalking.util.DolceVitaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:typeface="normal"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:id="@+id/simple_popup_title"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="enter text"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:typeface="normal"
+                    android:inputType="text"
+                    android:paddingTop="11dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/simple_popup_input"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#50888888"
+                    android:layout_marginTop="2dp"
+                    android:layout_below="@+id/simple_popup_input"/>
+
+            </RelativeLayout>
+
+            <bitwalking.bitwalking.util.RobotoTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Invalid text"
+                android:textSize="12sp"
+                android:visibility="invisible"
+                android:layout_marginLeft="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:id="@+id/simple_popup_error_msg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:background="@android:color/transparent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="CANCEL"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/simple_popup_cancel"
+                    android:layout_weight="0.1"/>
+
+                <Button
+                    android:background="@android:color/transparent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="OK"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/simple_popup_submit"
+                    android:layout_weight="0.1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

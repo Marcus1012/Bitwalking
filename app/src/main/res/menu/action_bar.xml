@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:yourapp="http://schemas.android.com/apk/res-auto" >
+    <item
+        android:id="@+id/action_bar_left_button"
+        android:title="left_button"
+        android:icon="@drawable/back_white"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/action_bar_right_button"
+        android:title="right_button"
+        android:visible="false"/>
+
+</menu>

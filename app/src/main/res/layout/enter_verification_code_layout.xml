@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="100dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prompt_enter_verifi"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textColor="@color/color.gray"
+                android:id="@+id/verification_code_text"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <!-- Code -->
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_background"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="10dp">
+
+                <bitwalking.bitwalking.util.BWEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:textColor="#B0B0B0"
+                    android:textCursorDrawable="@null"
+                    android:textColorHint="@color/color.gray"
+                    android:hint="Code"
+                    android:textSize="@dimen/text_input_size"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:id="@+id/verification_code"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resendCodeView"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Don't recive a code?\n GET A NEW ONE "
+        android:textColor="@color/color.gray"
+        android:textSize="16sp" />
+
+</RelativeLayout>

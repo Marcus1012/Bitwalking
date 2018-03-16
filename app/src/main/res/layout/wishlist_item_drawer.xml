@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <!-- Name -->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <bitwalking.bitwalking.util.RobotoTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Google Nexus 5x"
+                    android:textSize="@dimen/wishlist_item_text_size"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:id="@+id/wishlist_item_name"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="20dp"/>
+            </RelativeLayout>
+
+            <!-- Delete Item -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+                android:paddingLeft="10dp">
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/x_black_wishlist"
+                    android:scaleType="fitCenter"
+                    android:layout_marginRight="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/wishlist_item_icon"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

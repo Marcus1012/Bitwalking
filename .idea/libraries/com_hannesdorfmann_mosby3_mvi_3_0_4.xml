@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.hannesdorfmann.mosby3:mvi-3.0.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.android/build-cache/3c65a3c21b57d16a727518a0d3cf2c6ef265342e/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/3c65a3c21b57d16a727518a0d3cf2c6ef265342e/output/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.hannesdorfmann.mosby3/mvi/3.0.4/470b5d1cbf134a189639fecd6b6fc661c3205287/mvi-3.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/popup_close_layout"
+        android:background="@android:color/transparent"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp">
+
+        <ImageButton
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="left"
+            android:background="@android:color/transparent"
+            android:src="@drawable/cancel_icon"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/popup_close"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/popup_round_background">
+
+        <bitwalking.bitwalking.util.DolceVitaTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your name"
+            android:textSize="20sp"
+            android:typeface="normal"
+            android:textStyle="normal"
+            android:layout_margin="10dp"
+            android:id="@+id/edit_popup_title"/>
+
+        <bitwalking.bitwalking.util.BWEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:hint="Name"
+            android:layout_marginRight="6dp"
+            android:layout_marginLeft="6dp"
+            android:id="@+id/edit_popup_text"/>
+
+        <!-- Confirm / Cancel Buttons -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e0e0e0"
+                android:layout_alignParentTop="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <bitwalking.bitwalking.util.DolceVitaButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="CANCEL"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/popup_cancel"/>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="45dp"
+                    android:background="#e0e0e0"
+                    android:layout_weight="0"/>
+
+                <bitwalking.bitwalking.util.DolceVitaButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="OK"
+                    android:textSize="14sp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:id="@+id/popup_ok"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>
